@@ -1,0 +1,177 @@
+import 'package:flutter/material.dart';
+
+import '../utils/const.dart';
+
+class CustomExperience extends StatelessWidget {
+  final String companyImageAddress;
+  final String companyName;
+  final String companyPosition;
+  final String companyDuration;
+  final String companyLocation;
+  final String learning1;
+  final String learning2;
+  const CustomExperience(
+      {super.key,
+      required this.companyImageAddress,
+      required this.companyName,
+      required this.companyPosition,
+      required this.companyDuration,
+      required this.companyLocation,
+      required this.learning1,
+      required this.learning2});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.18,
+            width: MediaQuery.sizeOf(context).width * 0.60,
+            child: Column(children: [
+              Container(
+                height: MediaQuery.sizeOf(context).height * 0.10,
+                width: MediaQuery.sizeOf(context).width * 0.60,
+                decoration: BoxDecoration(
+                  border: Border.all(width: 0.5, color: Colors.grey.shade700),
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(18),
+                      topRight: Radius.circular(18)),
+                  color: PortFolioColors.colorOnPrimary,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          SizedBox(
+                              width: MediaQuery.sizeOf(context).width * 0.42,
+                              child: Text(
+                                companyName,
+                                style: TextStyle(
+                                    color: PortFolioColors.textColor,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize:
+                                        MediaQuery.sizeOf(context).height *
+                                            0.03),
+                                overflow: TextOverflow.ellipsis,
+                              )),
+                          SizedBox(
+                              width: MediaQuery.sizeOf(context).width * 0.15,
+                              child: Text(
+                                companyDuration,
+                                style: TextStyle(
+                                    color: PortFolioColors.textColor,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize:
+                                        MediaQuery.sizeOf(context).height *
+                                            0.022),
+                                overflow: TextOverflow.ellipsis,
+                                textAlign: TextAlign.end,
+                              )),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 05,
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          SizedBox(
+                            width: MediaQuery.sizeOf(context).width * 0.42,
+                            child: Text(
+                              companyPosition,
+                              style: TextStyle(
+                                  color: PortFolioColors.textColor,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: MediaQuery.sizeOf(context).height *
+                                      0.022),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                          SizedBox(
+                            width: MediaQuery.sizeOf(context).width * 0.15,
+                            child: Text(
+                              companyLocation,
+                              style: TextStyle(
+                                  color: PortFolioColors.textColor,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: MediaQuery.sizeOf(context).height *
+                                      0.022),
+                              overflow: TextOverflow.ellipsis,
+                              textAlign: TextAlign.end,
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                width: MediaQuery.sizeOf(context).width * 0.60,
+                height: MediaQuery.sizeOf(context).height * 0.08,
+                decoration: BoxDecoration(
+                  border: Border.all(width: 0.5, color: Colors.grey.shade700),
+                  borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(18),
+                      bottomRight: Radius.circular(18)),
+                  color: PortFolioColors.colorWhite,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(
+                        height: 05,
+                      ),
+                      Text(
+                        learning1,
+                        style: TextStyle(
+                            color: PortFolioColors.textColor,
+                            fontWeight: FontWeight.w600,
+                            fontSize: MediaQuery.sizeOf(context).height * 0.02),
+                      ),
+                      const SizedBox(
+                        height: 05,
+                      ),
+                      Text(
+                        learning2,
+                        style: TextStyle(
+                            color: PortFolioColors.textColor,
+                            fontWeight: FontWeight.w600,
+                            fontSize: MediaQuery.sizeOf(context).height * 0.02),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ]),
+          ),
+          SizedBox(
+            width: MediaQuery.sizeOf(context).width * 0.02,
+          ),
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.15,
+            width: MediaQuery.sizeOf(context).height * 0.15,
+            child: Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(100)),
+              color: PortFolioColors.colorWhite,
+              child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Image.asset(companyImageAddress)),
+            ),
+          ),
+        ]);
+  }
+}
+
