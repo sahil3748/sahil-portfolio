@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "782634841100",
+    "project_id": "sahil48-portfolio",
+    "storage_bucket": "sahil48-portfolio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782634841100:android:5af0ce720d12e4dec9ea29",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsJoHv3wVEpDkwOtLdJ-cDiCZr9KgzLQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
