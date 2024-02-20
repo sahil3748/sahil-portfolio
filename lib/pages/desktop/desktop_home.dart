@@ -31,6 +31,14 @@ class DesktopHomePageContent extends StatelessWidget {
             },
           ),
         ),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text('Made with ❤️ by Sahil Chudasama'),
+          ],
+        )
+        // ❤️
       ],
     );
   }
