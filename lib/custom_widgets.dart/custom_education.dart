@@ -2,6 +2,178 @@ import 'package:flutter/material.dart';
 
 import '../utils/const.dart';
 
+class CustomEducationMobile extends StatelessWidget {
+  final String imageAddress;
+  final String collegeName;
+  final String collegeDegree;
+  final String collegePassingYear;
+  final String collegeResult;
+  final String learning1;
+  final String learning2;
+  final String learning1InDetail;
+  final String learning2InDetail;
+  const CustomEducationMobile({
+    super.key,
+    required this.imageAddress,
+    required this.collegeName,
+    required this.collegeDegree,
+    required this.collegePassingYear,
+    required this.collegeResult,
+    required this.learning1,
+    required this.learning2,
+    required this.learning1InDetail,
+    required this.learning2InDetail,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.width * 0.24,
+              width: MediaQuery.of(context).size.width * 0.24,
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(100),
+                ),
+                color: PortFolioColors.colorWhite,
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Image.asset(
+                    imageAddress,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 15),
+        Container(
+          width: MediaQuery.of(context).size.width * 0.8,
+          decoration: BoxDecoration(
+            // border: Border.all(width: 0.5, color: Colors.grey.shade700),
+            borderRadius: BorderRadius.circular(18),
+            color: PortFolioColors.textColor,
+          ),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      collegeName,
+                      style: TextStyle(
+                        color: PortFolioColors.colorOnPrimary,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18,
+                      ),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      collegePassingYear,
+                      style: TextStyle(
+                        color: PortFolioColors.colorOnPrimary,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                      ),
+                      overflow: TextOverflow.clip,
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      collegeDegree,
+                      style: TextStyle(
+                        color: PortFolioColors.colorOnPrimary,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 14,
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      collegeResult,
+                      style: TextStyle(
+                        color: PortFolioColors.colorOnPrimary,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width * 0.8,
+                decoration: BoxDecoration(
+                  // border: Border.all(width: 0.5, color: Colors.grey.shade700),
+                  borderRadius: BorderRadius.circular(18),
+                  color: PortFolioColors.colorWhite,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        learning1,
+                        style: TextStyle(
+                          color: PortFolioColors.textColor,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      SizedBox(height: 5),
+                      Text(
+                        learning1InDetail,
+                        maxLines: 2,
+                        style: TextStyle(
+                          color: PortFolioColors.textColor,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        learning2,
+                        style: TextStyle(
+                          color: PortFolioColors.textColor,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      SizedBox(height: 5),
+                      Text(
+                        learning2InDetail,
+                        maxLines: 2,
+                        style: TextStyle(
+                          color: PortFolioColors.textColor,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 20),
+      ],
+    );
+  }
+}
+
 class CustomEducation extends StatelessWidget {
   final String imageAddress;
   final String collegeName;
