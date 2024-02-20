@@ -57,16 +57,18 @@ class CustomEducationMobile extends StatelessWidget {
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
           decoration: BoxDecoration(
-            // border: Border.all(width: 0.5, color: Colors.grey.shade700),
             borderRadius: BorderRadius.circular(18),
             color: PortFolioColors.textColor,
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       collegeName,
@@ -112,7 +114,9 @@ class CustomEducationMobile extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.8,
                 decoration: BoxDecoration(
                   // border: Border.all(width: 0.5, color: Colors.grey.shade700),
-                  borderRadius: BorderRadius.circular(18),
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(18),
+                      bottomRight: Radius.circular(18)),
                   color: PortFolioColors.colorWhite,
                 ),
                 child: Padding(

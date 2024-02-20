@@ -25,30 +25,24 @@ class CustomExperienceMobile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(8.0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.width * 0.24,
-                width: MediaQuery.of(context).size.width * 0.24,
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  color: PortFolioColors.colorWhite,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Image.asset(
-                      companyImageAddress,
-                    ),
-                  ),
+          SizedBox(
+            height: MediaQuery.of(context).size.width * 0.24,
+            width: MediaQuery.of(context).size.width * 0.24,
+            child: Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(100),
+              ),
+              color: PortFolioColors.colorWhite,
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Image.asset(
+                  companyImageAddress,
                 ),
               ),
-            ],
+            ),
           ),
           const SizedBox(
             height: 15,
@@ -81,19 +75,6 @@ class CustomExperienceMobile extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),
-                      // SizedBox(
-                      //   width: MediaQuery.of(context).size.width * 0.15,
-                      //   child: Text(
-                      //     companyDuration,
-                      //     style: TextStyle(
-                      //       color: PortFolioColors.textColor,
-                      //       fontWeight: FontWeight.w500,
-                      //       fontSize: 14,
-                      //     ),
-                      //     overflow: TextOverflow.ellipsis,
-                      //     textAlign: TextAlign.end,
-                      //   ),
-                      // ),
                     ],
                   ),
                 ),
@@ -205,7 +186,6 @@ class CustomExperienceMobile extends StatelessWidget {
               ],
             ),
           ),
-          // SizedBox(width: 10),
         ],
       ),
     );
