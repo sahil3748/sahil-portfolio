@@ -14,7 +14,6 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: MediaQuery.sizeOf(context).height,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.bottomCenter,
@@ -42,33 +41,24 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
             ),
           ),
           const SizedBox(height: 20),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                // Text(
-                //   'Projects',
-                //   style: TextStyle(
-                //     color: PortFolioColors.textColor,
-                //     fontWeight: FontWeight.bold,
-                //     fontSize: 24, // Adjusted font size for mobile
-                //   ),
-                // ),
-                // const SizedBox(height: 10),
-                Text(
-                  "My passion lies in creating innovative and impactful projects that leverage the latest technology tools. One of my proudest achievements is a live application available on the Play Store, showcasing my dedication to delivering seamless user experiences. With expertise in Flutter, I craft engaging mobile apps that leave a lasting impression. Welcome to my portfolio, and let's explore the possibilities of working together!", // Add your desired content here
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                child: Text(
+                  "My passion lies in creating innovative and impactful projects that leverage the latest technology tools. One of my proudest achievements is a live application available on the Play Store, showcasing my dedication to delivering seamless user experiences. With expertise in Flutter, I craft engaging mobile apps that leave a lasting impression. Welcome to my portfolio, and let's explore the possibilities of working together!",
                   style: TextStyle(
                     height: 1.7,
-                    fontSize: 14, // Adjusted font size for mobile
-                    color: PortFolioColors.colorOnSecondary,
+                    fontSize: MediaQuery.of(context).size.height * 0.025,
+                    color: Colors.grey[600],
                     fontWeight: FontWeight.w400,
                   ),
                   textAlign: TextAlign.justify,
                 ),
-                const SizedBox(height: 20),
-              ],
-            ),
+              ),
+              const SizedBox(height: 20),
+            ],
           ),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 8.0),

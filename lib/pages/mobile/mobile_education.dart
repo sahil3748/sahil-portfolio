@@ -28,86 +28,84 @@ class _EducationMobileState extends State<EducationMobile> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.90,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.05,
-                  ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.3,
-                    child: Center(
-                      child: ShowUpAnimation(
-                        animationDuration: const Duration(milliseconds: 600),
-                        curve: Curves.easeIn,
-                        direction: Direction.horizontal,
-                        offset: 0.5,
-                        child: Image.asset('assets/education.png'),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.02,
-                  ),
-                  Text(
-                    "Bachelor of Engineering in Computer Engineering",
-                    style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.height * 0.03,
-                      color: Colors.grey[600],
-                      fontWeight: FontWeight.w400,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Text(
-                    "(CGPA: 08.41 )",
-                    style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.height * 0.025,
-                      color: Colors.grey[600],
-                      fontWeight: FontWeight.w400,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Text(
-                    "Throughout my enriching journey in Computer Engineering, I've focused on practical learning, developing expertise in programming, web, and mobile app development. Moreover, I've cultivated strong public speaking skills, enabling effective project discussions and collaborations.",
-                    style: TextStyle(
-                      height: 1.7,
-                      fontSize: MediaQuery.of(context).size.height * 0.025,
-                      color: Colors.grey[600],
-                      fontWeight: FontWeight.w400,
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+          Container(
+            // height: MediaQuery.of(context).size.height * 0.90,
+            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.05,
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.3,
+                  child: Center(
+                    child: ShowUpAnimation(
+                      animationDuration: const Duration(milliseconds: 600),
+                      curve: Curves.easeIn,
+                      direction: Direction.horizontal,
+                      offset: 0.5,
+                      child: Image.asset('assets/education.png'),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.02,
+                ),
                 Text(
-                  'Colleges/ Universities',
+                  "Bachelor of Engineering in Computer Engineering",
                   style: TextStyle(
-                    color: PortFolioColors.textColor,
-                    fontWeight: FontWeight.bold,
-                    fontSize: MediaQuery.of(context).size.height * 0.035,
+                    fontSize: MediaQuery.of(context).size.height * 0.03,
+                    color: Colors.grey[600],
+                    fontWeight: FontWeight.w400,
                   ),
                   textAlign: TextAlign.center,
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "(CGPA: 08.41 )",
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.height * 0.025,
+                    color: Colors.grey[600],
+                    fontWeight: FontWeight.w400,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "Throughout my enriching journey in Computer Engineering, I've focused on practical learning, developing expertise in programming, web, and mobile app development. Moreover, I've cultivated strong public speaking skills, enabling effective project discussions and collaborations.",
+                  style: TextStyle(
+                    height: 1.7,
+                    fontSize: MediaQuery.of(context).size.height * 0.025,
+                    color: Colors.grey[600],
+                    fontWeight: FontWeight.w400,
+                  ),
+                  textAlign: TextAlign.justify,
+                ),
               ],
             ),
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Colleges/ Universities',
+                style: TextStyle(
+                  color: PortFolioColors.textColor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: MediaQuery.of(context).size.height * 0.035,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
           ),
           const SizedBox(
             height: 30,

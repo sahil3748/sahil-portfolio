@@ -27,29 +27,14 @@ class _ContactMeMobileState extends State<ContactMeMobile> {
       ),
       child: Column(
         children: [
-          // SizedBox(
-          //   height: MediaQuery.of(context).size.height * 0.3,
-          //   child: Center(
-          //     child: ShowUpAnimation(
-          //       animationDuration: const Duration(milliseconds: 600),
-          //       curve: Curves.easeIn,
-          //       direction: Direction.horizontal,
-          //       offset: 0.5,
-          //       child: Image.asset('assets/home.png'),
-          //     ),
-          //   ),
-          // ),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.3,
-            child: ShowUpAnimation(
-                animationDuration: const Duration(milliseconds: 600),
-                curve: Curves.easeIn,
-                direction: Direction.horizontal,
-                offset: -0.5,
-                child: Image.asset('assets/contactme.png')),
-          ),
+          ShowUpAnimation(
+              animationDuration: const Duration(milliseconds: 600),
+              curve: Curves.easeIn,
+              direction: Direction.horizontal,
+              offset: -0.5,
+              child: Image.asset('assets/contactme.png')),
           Container(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: ShowUpAnimation(
               animationDuration: const Duration(milliseconds: 600),
               curve: Curves.easeIn,
@@ -59,14 +44,6 @@ class _ContactMeMobileState extends State<ContactMeMobile> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Text(
-                  //   'titleText',
-                  //   style: TextStyle(
-                  //       color: PortFolioColors.textColor,
-                  //       fontWeight: FontWeight.bold,
-                  //       fontSize: MediaQuery.sizeOf(context).height * 0.06),
-                  // ),
-                  // SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 18.0),
                     child: Text(
@@ -79,11 +56,9 @@ class _ContactMeMobileState extends State<ContactMeMobile> {
                       textAlign: TextAlign.justify,
                     ),
                   ),
-                  // SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
                   const Row(
                     children: [],
                   ),
-                  // SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

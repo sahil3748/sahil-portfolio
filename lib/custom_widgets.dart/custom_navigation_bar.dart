@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../main.dart';
 import '../utils/const.dart';
 import 'custom_nav_button.dart';
@@ -24,18 +23,34 @@ class CustomNavigationBar extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                child: TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "<SahilChudasama/>",
-                    style: GoogleFonts.signikaNegative(
-                      textStyle: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width * 0.017,
-                        fontWeight: FontWeight.bold,
+                child: Row(
+                  children: [
+                    Text(
+                      "<",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w400,
                         color: PortFolioColors.textColor,
+                        fontSize: 22,
                       ),
                     ),
-                  ),
+                    Text(
+                      " SahilChudasama ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22,
+                        color: PortFolioColors.textColor,
+                        fontFamily: 'Agustina',
+                      ),
+                    ),
+                    Text(
+                      "/>",
+                      style: TextStyle(
+                        color: PortFolioColors.textColor,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 22,
+                      ),
+                    ),
+                  ],
                 ),
               )
             ],
