@@ -114,7 +114,7 @@ class CustomEducationMobile extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.8,
                 decoration: BoxDecoration(
                   // border: Border.all(width: 0.5, color: Colors.grey.shade700),
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(18),
                       bottomRight: Radius.circular(18)),
                   color: PortFolioColors.colorWhite,
@@ -131,12 +131,15 @@ class CustomEducationMobile extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           fontSize: 14,
                         ),
+                        maxLines: 5,
+                        textAlign: TextAlign.justify,
                         overflow: TextOverflow.ellipsis,
                       ),
                       SizedBox(height: 5),
                       Text(
                         learning1InDetail,
-                        maxLines: 2,
+                        maxLines: 6,
+                        textAlign: TextAlign.justify,
                         style: TextStyle(
                           color: PortFolioColors.textColor,
                           fontWeight: FontWeight.w400,
@@ -144,7 +147,7 @@ class CustomEducationMobile extends StatelessWidget {
                         ),
                         overflow: TextOverflow.ellipsis,
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Text(
                         learning2,
                         style: TextStyle(
@@ -152,12 +155,15 @@ class CustomEducationMobile extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           fontSize: 14,
                         ),
+                        maxLines: 5,
+                        textAlign: TextAlign.justify,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      SizedBox(height: 5),
+                      const SizedBox(height: 5),
                       Text(
                         learning2InDetail,
-                        maxLines: 2,
+                        maxLines: 6,
+                        textAlign: TextAlign.justify,
                         style: TextStyle(
                           color: PortFolioColors.textColor,
                           fontWeight: FontWeight.w400,
@@ -237,7 +243,7 @@ class CustomEducation extends StatelessWidget {
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(18),
                       topRight: Radius.circular(18)),
-                  color: PortFolioColors.colorOnPrimary,
+                  color: PortFolioColors.textColor,
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
@@ -253,7 +259,7 @@ class CustomEducation extends StatelessWidget {
                               child: Text(
                                 collegeName,
                                 style: TextStyle(
-                                    color: PortFolioColors.textColor,
+                                    color: PortFolioColors.colorOnPrimary,
                                     fontWeight: FontWeight.w600,
                                     fontSize:
                                         MediaQuery.sizeOf(context).height *
@@ -264,7 +270,7 @@ class CustomEducation extends StatelessWidget {
                               child: Text(
                             collegePassingYear,
                             style: TextStyle(
-                                color: PortFolioColors.textColor,
+                                color: PortFolioColors.colorOnPrimary,
                                 fontWeight: FontWeight.w500,
                                 fontSize:
                                     MediaQuery.sizeOf(context).height * 0.025),
@@ -278,7 +284,7 @@ class CustomEducation extends StatelessWidget {
                       Text(
                         collegeDegree,
                         style: TextStyle(
-                            color: PortFolioColors.textColor,
+                            color: PortFolioColors.colorOnPrimary,
                             fontWeight: FontWeight.w600,
                             fontSize:
                                 MediaQuery.sizeOf(context).height * 0.022),
@@ -289,7 +295,7 @@ class CustomEducation extends StatelessWidget {
                       Text(
                         collegeResult,
                         style: TextStyle(
-                            color: PortFolioColors.textColor,
+                            color: PortFolioColors.colorOnPrimary,
                             fontWeight: FontWeight.w600,
                             fontSize:
                                 MediaQuery.sizeOf(context).height * 0.022),

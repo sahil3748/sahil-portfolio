@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_social_button/flutter_social_button.dart';
 import 'package:show_up_animation/show_up_animation.dart';
 import '../../utils/const.dart';
 
@@ -10,24 +11,27 @@ class ContactMe extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(flex: 5, child: Center(child: ShowUpAnimation(
-          animationDuration: const Duration(milliseconds: 600),
+        Expanded(
+            flex: 5,
+            child: Center(
+                child: ShowUpAnimation(
+                    animationDuration: const Duration(milliseconds: 600),
                     curve: Curves.easeIn,
                     direction: Direction.horizontal,
                     offset: -0.5,
-          child: Image.asset('assets/contactme.png')))),
+                    child: Image.asset('assets/contactme.png')))),
         Expanded(
           flex: 5,
           child: Container(
             padding: const EdgeInsets.all(16.0),
             child: ShowUpAnimation(
               animationDuration: const Duration(milliseconds: 600),
-                    curve: Curves.easeIn,
-                    direction: Direction.horizontal,
-                    offset: 0.5,
+              curve: Curves.easeIn,
+              direction: Direction.horizontal,
+              offset: 0.5,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     titleText,
@@ -50,7 +54,7 @@ class ContactMe extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
-                  const Row(
+                  Row(
                     children: [],
                   ),
                   SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
@@ -82,4 +86,3 @@ class ContactMe extends StatelessWidget {
     );
   }
 }
-

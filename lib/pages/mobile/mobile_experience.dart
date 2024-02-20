@@ -82,10 +82,12 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
               collegeDegree: "Jan 2023 - Present",
               collegePassingYear: "Associate Software Developer",
               collegeResult: "Ahmedabad",
-              learning1: "learning1",
-              learning1InDetail: "Details of learning1",
-              learning2: "learning2",
-              learning2InDetail: "Details of learning2",
+              learning1: "Efficient State Handling",
+              learning1InDetail:
+                  "Mastered Flutter state management techniques (e.g., Provider, GetX) for responsive, scalable apps, optimizing performance and codebase organization.",
+              learning2: "API Data Integration",
+              learning2InDetail:
+                  "Proficient in integrating and handling data from external APIs like Inshorts, ensuring seamless data retrieval, error handling, and real-time updates for enhanced user experience.",
             ),
             const SizedBox(height: 30),
             const CustomEducationMobile(
