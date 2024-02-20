@@ -50,13 +50,6 @@ class _MobileHomePageContentState extends State<MobileHomePageContent> {
                 },
               ),
               ListTile(
-                title: const Text('Contact Me'),
-                onTap: () {
-                  Navigator.pop(context);
-                  contentNotifier.changeContent('Contact Me');
-                },
-              ),
-              ListTile(
                 title: const Text('Projects'),
                 onTap: () {
                   Navigator.pop(context);
@@ -68,6 +61,13 @@ class _MobileHomePageContentState extends State<MobileHomePageContent> {
                 onTap: () {
                   Navigator.pop(context);
                   contentNotifier.changeContent('Experience');
+                },
+              ),
+              ListTile(
+                title: const Text('Contact Me'),
+                onTap: () {
+                  Navigator.pop(context);
+                  contentNotifier.changeContent('Contact Me');
                 },
               ),
             ],
