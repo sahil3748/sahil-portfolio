@@ -30,44 +30,31 @@ class _EducationMobileState extends State<EducationMobile> {
         children: [
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.90,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.05,
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.3,
-                  child: Center(
-                    child: ShowUpAnimation(
-                      animationDuration: const Duration(milliseconds: 600),
-                      curve: Curves.easeIn,
-                      direction: Direction.horizontal,
-                      offset: 0.5,
-                      child: Image.asset('assets/education.png'),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.05,
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.3,
+                    child: Center(
+                      child: ShowUpAnimation(
+                        animationDuration: const Duration(milliseconds: 600),
+                        curve: Curves.easeIn,
+                        direction: Direction.horizontal,
+                        offset: 0.5,
+                        child: Image.asset('assets/education.png'),
+                      ),
                     ),
                   ),
-                ),
-
-                // Padding(
-                //   padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                //   child: Text(
-                //     "titleText",
-                //     style: TextStyle(
-                //       color: Colors.black,
-                //       fontWeight: FontWeight.bold,
-                //       fontSize: MediaQuery.of(context).size.height * 0.07,
-                //     ),
-                //     textAlign: TextAlign.center,
-                //   ),
-                // ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.02,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 18.0),
-                  child: Text(
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.02,
+                  ),
+                  Text(
                     "Bachelor of Engineering in Computer Engineering",
                     style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * 0.03,
@@ -76,13 +63,10 @@ class _EducationMobileState extends State<EducationMobile> {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.01,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 18.0),
-                  child: Text(
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(
                     "(CGPA: 08.41 )",
                     style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * 0.025,
@@ -91,10 +75,10 @@ class _EducationMobileState extends State<EducationMobile> {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: Text(
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(
                     "Throughout my enriching journey in Computer Engineering, I've focused on practical learning, developing expertise in programming, web, and mobile app development. Moreover, I've cultivated strong public speaking skills, enabling effective project discussions and collaborations.",
                     style: TextStyle(
                       height: 1.7,
@@ -104,20 +88,25 @@ class _EducationMobileState extends State<EducationMobile> {
                     ),
                     textAlign: TextAlign.justify,
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
-              'Colleges/ Universities',
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-                fontSize: MediaQuery.of(context).size.height * 0.06,
-              ),
-              textAlign: TextAlign.center,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Colleges/ Universities',
+                  style: TextStyle(
+                    color: PortFolioColors.textColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: MediaQuery.of(context).size.height * 0.035,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ),
           ),
           const SizedBox(
@@ -128,7 +117,7 @@ class _EducationMobileState extends State<EducationMobile> {
             curve: Curves.easeIn,
             direction: Direction.horizontal,
             offset: -0.5,
-            child: const CustomEducation(
+            child: const CustomEducationMobile(
               imageAddress: "assets/gp_logo.png",
               collegeName: "Silver Oak College of Engineering and Technology",
               collegeDegree: "B.Tech. in Computer Engineering",
@@ -143,14 +132,14 @@ class _EducationMobileState extends State<EducationMobile> {
             ),
           ),
           const SizedBox(
-            height: 50,
+            height: 30,
           ),
           ShowUpAnimation(
             animationDuration: const Duration(milliseconds: 600),
             curve: Curves.easeIn,
             direction: Direction.horizontal,
             offset: 0.5,
-            child: const CustomEducation(
+            child: const CustomEducationMobile(
               imageAddress: "assets/socet_logo.png",
               collegeName: "Government Polytechnic Ahmedabad",
               collegeDegree: "Diploma in Information & Technology",
@@ -169,14 +158,19 @@ class _EducationMobileState extends State<EducationMobile> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
-              'Certification',
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-                fontSize: MediaQuery.of(context).size.height * 0.06,
-              ),
-              textAlign: TextAlign.center,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Certification',
+                  style: TextStyle(
+                    color: PortFolioColors.textColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: MediaQuery.of(context).size.height * 0.045,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ),
           ),
         ],

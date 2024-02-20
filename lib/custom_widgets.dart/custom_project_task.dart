@@ -24,25 +24,28 @@ class CustomProjectTask extends StatelessWidget {
             SizedBox(height: MediaQuery.sizeOf(context).height * 0.007),
             SizedBox(
               height: MediaQuery.sizeOf(context).height * 0.04,
-              child: Text(projectName,
-                  style: TextStyle(
-                      color: PortFolioColors.textColor,
-                      fontWeight: FontWeight.w600,
-                      fontSize: MediaQuery.sizeOf(context).height * 0.03),
-                      overflow: TextOverflow.ellipsis,),
+              child: Text(
+                projectName,
+                style: TextStyle(
+                    color: PortFolioColors.textColor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: MediaQuery.sizeOf(context).height * 0.03),
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
             SizedBox(height: MediaQuery.sizeOf(context).height * 0.007),
             SizedBox(
               height: MediaQuery.sizeOf(context).height * 0.120,
-              child: Text(projectDescription,
-              maxLines: 5,
-                  style: TextStyle(
-                      color: PortFolioColors.textColor,
-                      fontWeight: FontWeight.w400,
-                      fontSize: MediaQuery.sizeOf(context).height * 0.020),
-                      textAlign: TextAlign.left,
-                      overflow: TextOverflow.ellipsis,),
-              
+              child: Text(
+                projectDescription,
+                maxLines: 5,
+                style: TextStyle(
+                    color: PortFolioColors.textColor,
+                    fontWeight: FontWeight.w400,
+                    fontSize: MediaQuery.sizeOf(context).height * 0.020),
+                textAlign: TextAlign.left,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
           ],
         ),

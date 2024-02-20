@@ -2,8 +2,10 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/main.dart';
+import 'package:flutter_application_2/pages/mobile/mobile_contact_me.dart';
 import 'package:flutter_application_2/pages/mobile/mobile_education.dart';
 import 'package:flutter_application_2/pages/mobile/mobile_experience.dart';
+import 'package:flutter_application_2/pages/mobile/mobile_projects.dart';
 import 'package:flutter_application_2/utils/const.dart';
 import 'package:flutter_application_2/utils/functions.dart';
 import 'package:provider/provider.dart';
@@ -79,13 +81,13 @@ class _MobileHomePageContentState extends State<MobileHomePageContent> {
                 child: content == 'Home'
                     ? const PortfolioHomeMobile()
                     : content == 'Education'
-                        ? EducationMobile()
+                        ? const EducationMobile()
                         : content == 'Contact Me'
-                            ? ExperienceMobile()
+                            ? const ContactMeMobile()
                             : content == 'Projects'
-                                ? ExperienceMobile()
+                                ? const ProjectsMobile()
                                 : content == 'Experience'
-                                    ? ExperienceMobile()
+                                    ? const ExperienceMobile()
                                     : const Center(
                                         child: Text(
                                             'Welcome to PortFolio Website')),
