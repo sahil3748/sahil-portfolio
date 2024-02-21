@@ -25,19 +25,17 @@ class _EducationMobileState extends State<EducationMobile> {
           ],
         ),
       ),
+      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            // height: MediaQuery.of(context).size.height * 0.90,
             padding: const EdgeInsets.symmetric(horizontal: 12.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.05,
-                ),
+                const SizedBox(height: 10),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.3,
                   child: Center(
@@ -77,15 +75,19 @@ class _EducationMobileState extends State<EducationMobile> {
                 const SizedBox(
                   height: 10,
                 ),
-                Text(
-                  "Throughout my enriching journey in Computer Engineering, I've focused on practical learning, developing expertise in programming, web, and mobile app development. Moreover, I've cultivated strong public speaking skills, enabling effective project discussions and collaborations.",
-                  style: TextStyle(
-                    height: 1.7,
-                    fontSize: MediaQuery.of(context).size.height * 0.025,
-                    color: Colors.grey[600],
-                    fontWeight: FontWeight.w400,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 18.0),
+                  child: Text(
+                    "Throughout my enriching journey in Computer Engineering, I've focused on practical learning, developing expertise in programming, web, and mobile app development. Moreover, I've cultivated strong public speaking skills, enabling effective project discussions and collaborations.",
+                    style: TextStyle(
+                      height: 1.7,
+                      wordSpacing: .5,
+                      fontSize: MediaQuery.of(context).size.height * 0.025,
+                      color: Colors.grey[600],
+                      fontWeight: FontWeight.w400,
+                    ),
+                    textAlign: TextAlign.justify,
                   ),
-                  textAlign: TextAlign.justify,
                 ),
               ],
             ),

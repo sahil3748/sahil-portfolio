@@ -25,6 +25,7 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
           ],
         ),
       ),
+      padding: const EdgeInsets.all(16.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -45,7 +46,7 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                padding: const EdgeInsets.symmetric(horizontal: 18.0),
                 child: Text(
                   "My passion lies in creating innovative and impactful projects that leverage the latest technology tools. One of my proudest achievements is a live application available on the Play Store, showcasing my dedication to delivering seamless user experiences. With expertise in Flutter, I craft engaging mobile apps that leave a lasting impression. Welcome to my portfolio, and let's explore the possibilities of working together!",
                   style: TextStyle(

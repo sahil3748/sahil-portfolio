@@ -28,7 +28,7 @@ class ExperienceDesktop extends StatelessWidget {
                     offset: -0.5,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,                    
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         SizedBox(
                             height: MediaQuery.sizeOf(context).height * 0.15),
@@ -37,7 +37,8 @@ class ExperienceDesktop extends StatelessWidget {
                           style: TextStyle(
                               color: PortFolioColors.textColor,
                               fontWeight: FontWeight.bold,
-                              fontSize: MediaQuery.sizeOf(context).height * 0.06),
+                              fontSize:
+                                  MediaQuery.sizeOf(context).height * 0.06),
                         ),
                         SizedBox(
                             height: MediaQuery.sizeOf(context).height * 0.05),
@@ -47,8 +48,9 @@ class ExperienceDesktop extends StatelessWidget {
                             "Feel free to contact me through any of my social media platforms, and I'll be sure to respond within 24 hours. As an accomplished application developer, I specialize in creating cutting-edge solutions using Flutter, Android, and open-source development. Let's collaborate and bring your ideas to life!", // Add your desired content here
                             style: TextStyle(
                                 height: 1.7,
+                                wordSpacing: 0.5,
                                 fontSize:
-                                    MediaQuery.sizeOf(context).height * 0.025,
+                                    MediaQuery.sizeOf(context).height * 0.03,
                                 color: PortFolioColors.colorOnSecondary,
                                 fontWeight: FontWeight.w400),
                             textAlign: TextAlign.justify,
@@ -69,13 +71,12 @@ class ExperienceDesktop extends StatelessWidget {
               Expanded(
                   flex: 5,
                   child: Center(
-                    child: ShowUpAnimation(
-                      animationDuration: const Duration(milliseconds: 600),
-                    curve: Curves.easeIn,
-                    direction: Direction.horizontal,
-                    offset: 0.5,
-                      child: Image.asset('assets/experience.png'))
-                  )),
+                      child: ShowUpAnimation(
+                          animationDuration: const Duration(milliseconds: 600),
+                          curve: Curves.easeIn,
+                          direction: Direction.horizontal,
+                          offset: 0.5,
+                          child: Image.asset('assets/experience.png')))),
             ],
           ),
         ),

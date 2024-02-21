@@ -89,8 +89,9 @@ class _EducationDesktopState extends State<EducationDesktop> {
                             "Throughout my enriching journey in Computer Engineering, I've focused on practical learning, developing expertise in programming, web, and mobile app development. Moreover, I've cultivated strong public speaking skills, enabling effective project discussions and collaborations.", // Add your desired content here
                             style: TextStyle(
                                 height: 1.7,
+                                wordSpacing: 0.5,
                                 fontSize:
-                                    MediaQuery.sizeOf(context).height * 0.025,
+                                    MediaQuery.sizeOf(context).height * 0.03,
                                 color: PortFolioColors.colorOnSecondary,
                                 fontWeight: FontWeight.w400),
                             textAlign: TextAlign.justify,

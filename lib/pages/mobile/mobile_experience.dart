@@ -52,6 +52,7 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
                     "Feel free to contact me through any of my social media platforms, and I'll be sure to respond within 24 hours. As an accomplished application developer, I specialize in creating cutting-edge solutions using Flutter, Android, and open-source development. Let's collaborate and bring your ideas to life!",
                     style: TextStyle(
                       height: 1.7,
+                      wordSpacing: .5,
                       fontSize: MediaQuery.of(context).size.height * 0.025,
                       color: Colors.grey[600],
                       fontWeight: FontWeight.w400,
@@ -60,6 +61,9 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
                   ),
                 ],
               ),
+            ),
+            const SizedBox(
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

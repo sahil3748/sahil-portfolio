@@ -21,13 +21,12 @@ class ProjectDesktop extends StatelessWidget {
               Expanded(
                 flex: 5,
                 child: Center(
-                  child: ShowUpAnimation(
-                    animationDuration: const Duration(milliseconds: 600),
-                    curve: Curves.easeIn,
-                    direction: Direction.horizontal,
-                    offset: -0.5,
-                    child: Image.asset('assets/projects.png'))
-                ),
+                    child: ShowUpAnimation(
+                        animationDuration: const Duration(milliseconds: 600),
+                        curve: Curves.easeIn,
+                        direction: Direction.horizontal,
+                        offset: -0.5,
+                        child: Image.asset('assets/projects.png'))),
               ),
               Expanded(
                 flex: 5,
@@ -48,7 +47,8 @@ class ProjectDesktop extends StatelessWidget {
                           style: TextStyle(
                               color: PortFolioColors.textColor,
                               fontWeight: FontWeight.bold,
-                              fontSize: MediaQuery.sizeOf(context).height * 0.06),
+                              fontSize:
+                                  MediaQuery.sizeOf(context).height * 0.06),
                         ),
                         SizedBox(
                             height: MediaQuery.sizeOf(context).height * 0.05),
@@ -58,8 +58,9 @@ class ProjectDesktop extends StatelessWidget {
                             "My passion lies in creating innovative and impactful projects that leverage the latest technology tools. One of my proudest achievements is a live application available on the Play Store, showcasing my dedication to delivering seamless user experiences. With expertise in Flutter, I craft engaging mobile apps that leave a lasting impression. Welcome to my portfolio, and let's explore the possibilities of working together!", // Add your desired content here
                             style: TextStyle(
                                 height: 1.7,
+                                wordSpacing: 0.5,
                                 fontSize:
-                                    MediaQuery.sizeOf(context).height * 0.025,
+                                    MediaQuery.sizeOf(context).height * 0.03,
                                 color: PortFolioColors.colorOnSecondary,
                                 fontWeight: FontWeight.w400),
                             textAlign: TextAlign.justify,

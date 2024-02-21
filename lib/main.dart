@@ -29,7 +29,11 @@ class PortfolioApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Sahil Portfolio',
       theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
-      darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
+      darkTheme: ThemeData(
+          useMaterial3: true,
+          colorScheme: darkColorScheme,
+          appBarTheme:
+              AppBarTheme(backgroundColor: PortFolioColors.colorPrimary)),
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),

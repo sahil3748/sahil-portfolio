@@ -114,7 +114,7 @@ class PortFolioHomeDesktop extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               launchURL(
-                                  "https://drive.google.com/file/d/1Um5RNxDjVS1BJZVA9fbKmjUwtJlOtWfh/view?usp=sharing");
+                                  "https://drive.google.com/file/d/1wkl8679I28jJgeDN-ai3V92mPmC8prYP/view?usp=sharing");
                             },
                             child: Card(
                               color: PortFolioColors.textColor,

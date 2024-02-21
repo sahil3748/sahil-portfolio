@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/utils/const.dart';
+import 'package:flutter_application_2/utils/functions.dart';
 import 'package:show_up_animation/show_up_animation.dart';
 
 class ContactMeMobile extends StatefulWidget {
@@ -32,7 +33,9 @@ class _ContactMeMobileState extends State<ContactMeMobile> {
               curve: Curves.easeIn,
               direction: Direction.horizontal,
               offset: -0.5,
-              child: Image.asset('assets/contactme.png')),
+              child: SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.5,
+                  child: Image.asset('assets/contact_us.png'))),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: ShowUpAnimation(
@@ -63,7 +66,10 @@ class _ContactMeMobileState extends State<ContactMeMobile> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          launchURL(
+                              "https://drive.google.com/file/d/1wkl8679I28jJgeDN-ai3V92mPmC8prYP/view?usp=sharing");
+                        },
                         child: Card(
                           color: PortFolioColors.textColor,
                           child: Padding(
