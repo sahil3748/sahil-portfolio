@@ -259,46 +259,46 @@ class _PortfolioHomeMobileState extends State<PortfolioHomeMobile> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'What I Do?',
-                  style: TextStyle(
-                    color: PortFolioColors.textColor,
-                    fontWeight: FontWeight.bold,
-                    fontSize: MediaQuery.of(context).size.height * 0.06,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.5,
-            child: const Row(
-              children: [
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      "Home",
-                      style: TextStyle(fontSize: 16),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      "Home",
-                      style: TextStyle(fontSize: 16),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 30.0),
+          //   child: Row(
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: [
+          //       Text(
+          //         'What I Do?',
+          //         style: TextStyle(
+          //           color: PortFolioColors.textColor,
+          //           fontWeight: FontWeight.bold,
+          //           fontSize: MediaQuery.of(context).size.height * 0.06,
+          //         ),
+          //         textAlign: TextAlign.center,
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // SizedBox(
+          //   height: MediaQuery.of(context).size.height * 0.5,
+          //   child: const Row(
+          //     children: [
+          //       Expanded(
+          //         child: Center(
+          //           child: Text(
+          //             "Home",
+          //             style: TextStyle(fontSize: 16),
+          //           ),
+          //         ),
+          //       ),
+          //       Expanded(
+          //         child: Center(
+          //           child: Text(
+          //             "Home",
+          //             style: TextStyle(fontSize: 16),
+          //           ),
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
         ],
       ),
     );

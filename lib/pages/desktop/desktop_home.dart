@@ -147,42 +147,42 @@ class PortFolioHomeDesktop extends StatelessWidget {
                     child: Image.asset('assets/home.png'))),
           ),
         ]),
-        SizedBox(height: MediaQuery.sizeOf(context).height * 0.3),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('What I Do?',
-                style: TextStyle(
-                    color: PortFolioColors.textColor,
-                    fontWeight: FontWeight.bold,
-                    fontSize: MediaQuery.sizeOf(context).height * 0.06),
-                textAlign: TextAlign.center),
-          ],
-        ),
-        SizedBox(
-            height: MediaQuery.sizeOf(context).height * 0.5,
-            child: const Row(
-              children: [
-                Expanded(
-                  flex: 5,
-                  child: Center(
-                    child: Text(
-                      "Home", // Add your desired content here
-                      style: TextStyle(fontSize: 16),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  flex: 5,
-                  child: Center(
-                    child: Text(
-                      "Home", // Add your desired content here
-                      style: TextStyle(fontSize: 16),
-                    ),
-                  ),
-                ),
-              ],
-            )),
+        // SizedBox(height: MediaQuery.sizeOf(context).height * 0.3),
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     Text('What I Do?',
+        //         style: TextStyle(
+        //             color: PortFolioColors.textColor,
+        //             fontWeight: FontWeight.bold,
+        //             fontSize: MediaQuery.sizeOf(context).height * 0.06),
+        //         textAlign: TextAlign.center),
+        //   ],
+        // ),
+        // SizedBox(
+        //     height: MediaQuery.sizeOf(context).height * 0.5,
+        //     child: const Row(
+        //       children: [
+        //         Expanded(
+        //           flex: 5,
+        //           child: Center(
+        //             child: Text(
+        //               "Home", // Add your desired content here
+        //               style: TextStyle(fontSize: 16),
+        //             ),
+        //           ),
+        //         ),
+        //         Expanded(
+        //           flex: 5,
+        //           child: Center(
+        //             child: Text(
+        //               "Home", // Add your desired content here
+        //               style: TextStyle(fontSize: 16),
+        //             ),
+        //           ),
+        //         ),
+        //       ],
+        //     )),
       ],
     );
   }

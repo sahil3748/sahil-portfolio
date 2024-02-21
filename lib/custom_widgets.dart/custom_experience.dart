@@ -199,7 +199,9 @@ class CustomExperience extends StatelessWidget {
   final String companyDuration;
   final String companyLocation;
   final String learning1;
+  final String learning1InDetail;
   final String learning2;
+  final String learning2InDetail;
   const CustomExperience(
       {super.key,
       required this.companyImageAddress,
@@ -208,7 +210,9 @@ class CustomExperience extends StatelessWidget {
       required this.companyDuration,
       required this.companyLocation,
       required this.learning1,
-      required this.learning2});
+      required this.learning1InDetail,
+      required this.learning2,
+      required this.learning2InDetail});
 
   @override
   Widget build(BuildContext context) {
@@ -217,18 +221,18 @@ class CustomExperience extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
-            height: MediaQuery.sizeOf(context).height * 0.18,
+            // height: MediaQuery.sizeOf(context).height * 0.18,
             width: MediaQuery.sizeOf(context).width * 0.60,
             child: Column(children: [
               Container(
                 height: MediaQuery.sizeOf(context).height * 0.10,
                 width: MediaQuery.sizeOf(context).width * 0.60,
                 decoration: BoxDecoration(
-                  border: Border.all(width: 0.5, color: Colors.grey.shade700),
+                  // border: Border.all(width: 0.5, color: Colors.grey.shade700),
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(18),
                       topRight: Radius.circular(18)),
-                  color: PortFolioColors.colorOnPrimary,
+                  color: PortFolioColors.textColor,
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -244,7 +248,7 @@ class CustomExperience extends StatelessWidget {
                               child: Text(
                                 companyName,
                                 style: TextStyle(
-                                    color: PortFolioColors.textColor,
+                                    color: PortFolioColors.colorOnPrimary,
                                     fontWeight: FontWeight.w600,
                                     fontSize:
                                         MediaQuery.sizeOf(context).height *
@@ -256,7 +260,8 @@ class CustomExperience extends StatelessWidget {
                               child: Text(
                                 companyDuration,
                                 style: TextStyle(
-                                    color: PortFolioColors.textColor,
+                                    color: PortFolioColors.colorOnPrimary
+                                        .withOpacity(.85),
                                     fontWeight: FontWeight.w500,
                                     fontSize:
                                         MediaQuery.sizeOf(context).height *
@@ -278,7 +283,8 @@ class CustomExperience extends StatelessWidget {
                             child: Text(
                               companyPosition,
                               style: TextStyle(
-                                  color: PortFolioColors.textColor,
+                                  color: PortFolioColors.colorOnPrimary
+                                      .withOpacity(.85),
                                   fontWeight: FontWeight.w500,
                                   fontSize: MediaQuery.sizeOf(context).height *
                                       0.022),
@@ -290,7 +296,8 @@ class CustomExperience extends StatelessWidget {
                             child: Text(
                               companyLocation,
                               style: TextStyle(
-                                  color: PortFolioColors.textColor,
+                                  color: PortFolioColors.colorOnPrimary
+                                      .withOpacity(.85),
                                   fontWeight: FontWeight.w500,
                                   fontSize: MediaQuery.sizeOf(context).height *
                                       0.022),
@@ -306,7 +313,7 @@ class CustomExperience extends StatelessWidget {
               ),
               Container(
                 width: MediaQuery.sizeOf(context).width * 0.60,
-                height: MediaQuery.sizeOf(context).height * 0.08,
+                // height: MediaQuery.sizeOf(context).he ight * 0.12,
                 decoration: BoxDecoration(
                   border: Border.all(width: 0.5, color: Colors.grey.shade700),
                   borderRadius: const BorderRadius.only(
@@ -330,6 +337,13 @@ class CustomExperience extends StatelessWidget {
                             fontWeight: FontWeight.w600,
                             fontSize: MediaQuery.sizeOf(context).height * 0.02),
                       ),
+                      Text(
+                        learning1InDetail,
+                        style: TextStyle(
+                            color: PortFolioColors.textColor,
+                            // fontWeight: FontWeight.w600,
+                            fontSize: MediaQuery.sizeOf(context).height * 0.02),
+                      ),
                       const SizedBox(
                         height: 05,
                       ),
@@ -339,7 +353,17 @@ class CustomExperience extends StatelessWidget {
                             color: PortFolioColors.textColor,
                             fontWeight: FontWeight.w600,
                             fontSize: MediaQuery.sizeOf(context).height * 0.02),
-                      )
+                      ),
+                      Text(
+                        learning2InDetail,
+                        style: TextStyle(
+                            color: PortFolioColors.textColor,
+                            // fontWeight: FontWeight.w600,
+                            fontSize: MediaQuery.sizeOf(context).height * 0.02),
+                      ),
+                      const SizedBox(
+                        height: 05,
+                      ),
                     ],
                   ),
                 ),
@@ -350,8 +374,8 @@ class CustomExperience extends StatelessWidget {
             width: MediaQuery.sizeOf(context).width * 0.02,
           ),
           SizedBox(
-            height: MediaQuery.sizeOf(context).height * 0.15,
-            width: MediaQuery.sizeOf(context).height * 0.15,
+            height: MediaQuery.sizeOf(context).height * 0.20,
+            width: MediaQuery.sizeOf(context).height * 0.20,
             child: Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100)),

@@ -156,23 +156,23 @@ class _EducationMobileState extends State<EducationMobile> {
           const SizedBox(
             height: 30,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Certification',
-                  style: TextStyle(
-                    color: PortFolioColors.textColor,
-                    fontWeight: FontWeight.bold,
-                    fontSize: MediaQuery.of(context).size.height * 0.045,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ],
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          //   child: Row(
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: [
+          //       Text(
+          //         'Certification',
+          //         style: TextStyle(
+          //           color: PortFolioColors.textColor,
+          //           fontWeight: FontWeight.bold,
+          //           fontSize: MediaQuery.of(context).size.height * 0.045,
+          //         ),
+          //         textAlign: TextAlign.center,
+          //       ),
+          //     ],
+          //   ),
+          // ),
         ],
       ),
     );

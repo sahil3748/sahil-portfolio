@@ -170,17 +170,17 @@ class _EducationDesktopState extends State<EducationDesktop> {
         const SizedBox(
           height: 30,
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Certification',
-                style: TextStyle(
-                    color: PortFolioColors.textColor,
-                    fontWeight: FontWeight.bold,
-                    fontSize: MediaQuery.sizeOf(context).height * 0.06),
-                textAlign: TextAlign.center),
-          ],
-        ),
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     Text('Certification',
+        //         style: TextStyle(
+        //             color: PortFolioColors.textColor,
+        //             fontWeight: FontWeight.bold,
+        //             fontSize: MediaQuery.sizeOf(context).height * 0.06),
+        //         textAlign: TextAlign.center),
+        //   ],
+        // ),
       ],
     );
   }

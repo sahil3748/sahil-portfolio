@@ -10,6 +10,8 @@ class ContactMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Expanded(
           flex: 5,
@@ -24,13 +26,13 @@ class ContactMe extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Text(
-                  //   titleText,
-                  //   style: TextStyle(
-                  //       color: PortFolioColors.textColor,
-                  //       fontWeight: FontWeight.bold,
-                  //       fontSize: MediaQuery.sizeOf(context).height * 0.06),
-                  // ),
+                  Text(
+                    titleText,
+                    style: TextStyle(
+                        color: PortFolioColors.textColor,
+                        fontWeight: FontWeight.bold,
+                        fontSize: MediaQuery.sizeOf(context).height * 0.06),
+                  ),
                   SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 18.0),
@@ -85,9 +87,7 @@ class ContactMe extends StatelessWidget {
                     curve: Curves.easeIn,
                     direction: Direction.horizontal,
                     offset: 0.5,
-                    child: SizedBox(
-                        height: MediaQuery.sizeOf(context).height / 1.2,
-                        child: Image.asset('assets/contact_us.png'))))),
+                    child: Image.asset('assets/contact_person.png')))),
       ],
     );
   }

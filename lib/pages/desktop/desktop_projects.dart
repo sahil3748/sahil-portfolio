@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/model/project_details.dart';
 import 'package:show_up_animation/show_up_animation.dart';
 
 import '../../custom_widgets.dart/custom_project_task.dart';
@@ -10,6 +11,44 @@ class ProjectDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<ProjectDetails> projectDetailsList = [
+      ProjectDetails(
+        projectImageAddress: "assets/vyaya_logo.png",
+        projectName: 'Vyaya (Manages Your Expenses)',
+        projectDescription:
+            'Effortlessly manage income & expenses. Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore.',
+      ),
+      ProjectDetails(
+        projectImageAddress: "assets/speedometer_logo.png",
+        projectName: 'Speed Detector',
+        projectDescription:
+            'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision.',
+      ),
+      ProjectDetails(
+        projectImageAddress: "assets/service_baba_logo.png",
+        projectName: 'Service Baba',
+        projectDescription:
+            'Service Baba is a platform where service providers present their work & normal users can book their services by checking their work.',
+      ),
+      ProjectDetails(
+        projectImageAddress: "assets/cpis_logo.png",
+        projectName: 'CPIS',
+        projectDescription:
+            'CPIS (Citizen Problem Identification and System), with the help of this, citizens can register complaints to the corporation.',
+      ),
+      ProjectDetails(
+        projectImageAddress: "assets/mentormate_logo.jpg",
+        projectName: 'MentorMate',
+        projectDescription:
+            'It is a mobile Application where student can directly connect to Expert & learn the topics in Details.',
+      ),
+      ProjectDetails(
+        projectImageAddress: "assets/eatup_logo.png",
+        projectName: 'EatUP',
+        projectDescription:
+            'Plan your Daily Meal with Our Suggestions according to food Material you have and Get Reminder Before Cooking Time.',
+      ),
+    ];
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
@@ -81,63 +120,30 @@ class ProjectDesktop extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
-            height: MediaQuery.sizeOf(context).height * 0.30,
-            child: const Row(
-              children: [
-                Expanded(
-                  flex: 3,
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 18),
+          // height: MediaQuery.sizeOf(context).height * 0.30,
+          child: GridView.builder(
+              shrinkWrap: true,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  childAspectRatio: 2.0,
+                  crossAxisCount: 3,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10),
+              itemCount: projectDetailsList.length,
+              itemBuilder: (context, index) {
+                return SizedBox(
+                  height: 20,
+                  // child: Text('data'),
                   child: CustomProjectTask(
-                      projectName: 'Vyaya (Manages Your Expenses)',
+                      projectImagePath:
+                          projectDetailsList[index].projectImageAddress,
+                      projectName: projectDetailsList[index].projectName,
                       projectDescription:
-                          'Effortlessly manage income & expenses.Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore.'),
-                ),
-                Expanded(
-                  flex: 3,
-                  child: CustomProjectTask(
-                      projectName: 'Speed Detector',
-                      projectDescription:
-                          'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision.'),
-                ),
-                Expanded(
-                  flex: 3,
-                  child: CustomProjectTask(
-                      projectName: 'Service Baba',
-                      projectDescription:
-                          'Service Baba is platform where service provider presents their work & normal user can book their services by checking their work.'),
-                ),
-              ],
-            )),
-        SizedBox(
-          height: MediaQuery.sizeOf(context).height * 0.005,
+                          projectDetailsList[index].projectDescription),
+                );
+              }),
         ),
-        SizedBox(
-            height: MediaQuery.sizeOf(context).height * 0.30,
-            child: const Row(
-              children: [
-                Expanded(
-                  flex: 3,
-                  child: CustomProjectTask(
-                      projectName: 'CPIS',
-                      projectDescription:
-                          'CPIS (Citizen Problem Identification and System), with help of this citizen can register complain to corporation.'),
-                ),
-                Expanded(
-                  flex: 3,
-                  child: CustomProjectTask(
-                      projectName: 'Event Planner',
-                      projectDescription:
-                          'It is a mobile Application. where user can simply plan any public or private Events'),
-                ),
-                Expanded(
-                  flex: 3,
-                  child: CustomProjectTask(
-                      projectName: 'EatUP',
-                      projectDescription:
-                          'Plan your Daily Meal with Our Suggestions according to food Material you have.and Get Reminder Before Cooking Time.'),
-                ),
-              ],
-            )),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.025,
         ),

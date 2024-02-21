@@ -35,7 +35,7 @@ class _ContactMeMobileState extends State<ContactMeMobile> {
               offset: -0.5,
               child: SizedBox(
                   height: MediaQuery.of(context).size.height * 0.5,
-                  child: Image.asset('assets/contact_us.png'))),
+                  child: Image.asset('assets/contact_person.png'))),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: ShowUpAnimation(
