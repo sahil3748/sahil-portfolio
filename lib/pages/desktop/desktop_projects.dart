@@ -14,41 +14,48 @@ class ProjectDesktop extends StatelessWidget {
     List<ProjectDetails> projectDetailsList = [
       ProjectDetails(
         projectImageAddress: "assets/vyaya_logo.png",
-        projectName: 'Vyaya (Manages Your Expenses)',
+        projectName: 'Vyaya',
+        projectTagline: 'Manage your Expenses',
         projectDescription:
             'Effortlessly manage income & expenses. Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/speedometer_logo.png",
         projectName: 'Speed Detector',
+        projectTagline: "Track, Detect, Measure",
         projectDescription:
             'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/service_baba_logo.png",
         projectName: 'Service Baba',
+        projectTagline: "Service Solution: Book with Ease!",
         projectDescription:
             'Service Baba is a platform where service providers present their work & normal users can book their services by checking their work.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/cpis_logo.png",
         projectName: 'CPIS',
+        projectTagline: "Empowering Citizens, Solving Problems",
         projectDescription:
             'CPIS (Citizen Problem Identification and System), with the help of this, citizens can register complaints to the corporation.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/mentormate_logo.jpg",
         projectName: 'MentorMate',
+        projectTagline: "Expert Learning, Simplified",
         projectDescription:
             'It is a mobile Application where student can directly connect to Expert & learn the topics in Details.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/eatup_logo.png",
         projectName: 'EatUP',
+        projectTagline: "Effortless Planning, Timely Reminders",
         projectDescription:
             'Plan your Daily Meal with Our Suggestions according to food Material you have and Get Reminder Before Cooking Time.',
       ),
     ];
+
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
@@ -136,11 +143,13 @@ class ProjectDesktop extends StatelessWidget {
                   height: 20,
                   // child: Text('data'),
                   child: CustomProjectTask(
-                      projectImagePath:
-                          projectDetailsList[index].projectImageAddress,
-                      projectName: projectDetailsList[index].projectName,
-                      projectDescription:
-                          projectDetailsList[index].projectDescription),
+                    projectImagePath:
+                        projectDetailsList[index].projectImageAddress,
+                    projectName: projectDetailsList[index].projectName,
+                    projectDescription:
+                        projectDetailsList[index].projectDescription,
+                    projectTagline: projectDetailsList[index].projectTagline,
+                  ),
                 );
               }),
         ),

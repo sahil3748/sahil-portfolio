@@ -105,9 +105,9 @@ class PortFolioHomeDesktop extends StatelessWidget {
                     const Row(
                       children: [],
                     ),
-                    SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
+                    const SizedBox(height: 20),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [

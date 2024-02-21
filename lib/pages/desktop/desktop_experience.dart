@@ -45,7 +45,7 @@ class ExperienceDesktop extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 18.0),
                           child: Text(
-                            "Feel free to contact me through any of my social media platforms, and I'll be sure to respond within 24 hours. As an accomplished application developer, I specialize in creating cutting-edge solutions using Flutter, Android, and open-source development. Let's collaborate and bring your ideas to life!", // Add your desired content here
+                            "With a year of Flutter development experience, I excel in state management using GetX and Provider. Proficient in Firebase for real-time databases and authentication, I leverage SQLite, Hive, and Google Drive API for efficient data management. Skilled in ML Kit and TensorFlow Lite for machine learning tasks, I prioritize user data security with robust encryption.",
                             style: TextStyle(
                                 height: 1.7,
                                 wordSpacing: 0.5,

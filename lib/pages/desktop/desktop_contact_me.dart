@@ -47,33 +47,192 @@ class ContactMe extends StatelessWidget {
                       textAlign: TextAlign.justify,
                     ),
                   ),
-                  SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
-                  const Row(
-                    children: [],
-                  ),
-                  SizedBox(height: MediaQuery.sizeOf(context).height * 0.05),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          launchURL(
-                              "https://drive.google.com/file/d/1wkl8679I28jJgeDN-ai3V92mPmC8prYP/view?usp=sharing");
-                        },
-                        child: Card(
-                          color: PortFolioColors.textColor,
-                          child: Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Text(
-                              'See My Resume',
-                              style: TextStyle(
-                                  color: PortFolioColors.colorOnPrimary),
+                  const SizedBox(height: 20),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            launchURL(
+                                'https://www.linkedin.com/in/sahil-chudasama');
+                          },
+                          child: Card(
+                            color: PortFolioColors.colorWhite,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(50)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(50),
+                                  child: Image.asset(
+                                    'assets/linkedin.png',
+                                    height:
+                                        MediaQuery.sizeOf(context).height * .05,
+                                    width:
+                                        MediaQuery.sizeOf(context).height * .05,
+                                  )),
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                        const SizedBox(
+                          width: 15,
+                        ),
+                        InkWell(
+                          onTap: () {
+                            launchURL("https://github.com/sahil3748");
+                          },
+                          child: Card(
+                            color: PortFolioColors.colorWhite,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(50)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(50),
+                                  child: Image.asset(
+                                    'assets/github.png',
+                                    height:
+                                        MediaQuery.sizeOf(context).height * .05,
+                                    width:
+                                        MediaQuery.sizeOf(context).height * .05,
+                                  )),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 15,
+                        ),
+                        InkWell(
+                          onTap: () {
+                            launchURL(
+                                'mailto:sahilchudasama471@gmail.com?subject=${Uri.encodeFull('')}&body=${Uri.encodeFull('')}');
+                          },
+                          child: Card(
+                            color: PortFolioColors.colorWhite,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(50)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(50),
+                                  child: Image.asset(
+                                    'assets/gmail.png',
+                                    height:
+                                        MediaQuery.sizeOf(context).height * .05,
+                                    width:
+                                        MediaQuery.sizeOf(context).height * .05,
+                                  )),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 15,
+                        ),
+                        // InkWell(
+
+                        //   onTap: () {
+                        //     launchURL('');
+                        //   },
+                        //   child: Card(
+                        //     color: PortFolioColors.colorWhite,
+                        //     shape: RoundedRectangleBorder(
+                        //         borderRadius: BorderRadius.circular(50)),
+                        //     child: Padding(
+                        //       padding: const EdgeInsets.all(5.0),
+                        //       child: ClipRRect(
+                        //           borderRadius: BorderRadius.circular(50),
+                        //           child: Image.asset(
+                        //             'assets/whatsapp.png',
+                        //             height:
+                        //                 MediaQuery.sizeOf(context).height * .05,
+                        //             width:
+                        //                 MediaQuery.sizeOf(context).height * .05,
+                        //           )),
+                        //     ),
+                        //   ),
+                        // ),
+                        // const SizedBox(
+                        //   width: 15,
+                        // ),
+                        // InkWell(
+                        //   onTap: () async {
+                        //     launchURL('');
+                        //   },
+                        //   child: Card(
+                        //     color: PortFolioColors.colorWhite,
+                        //     shape: RoundedRectangleBorder(
+                        //         borderRadius: BorderRadius.circular(50)),
+                        //     child: Padding(
+                        //       padding: const EdgeInsets.all(5.0),
+                        //       child: ClipRRect(
+                        //           borderRadius: BorderRadius.circular(50),
+                        //           child: Image.asset(
+                        //             'assets/instagram.png',
+                        //             height:
+                        //                 MediaQuery.sizeOf(context).height * .05,
+                        //             width:
+                        //                 MediaQuery.sizeOf(context).height * .05,
+                        //           )),
+                        //     ),
+                        //   ),
+                        // ),
+                        // const SizedBox(
+                        //   width: 15,
+                        // ),
+                        // InkWell(
+                        //   onTap: () {
+                        //     launchURL('');
+                        //   },
+                        //   child: Card(
+                        //     color: PortFolioColors.colorWhite,
+                        //     shape: RoundedRectangleBorder(
+                        //         borderRadius: BorderRadius.circular(50)),
+                        //     child: Padding(
+                        //       padding: const EdgeInsets.all(5.0),
+                        //       child: ClipRRect(
+                        //           borderRadius: BorderRadius.circular(50),
+                        //           child: Image.asset(
+                        //             'assets/facebook.png',
+                        //             height:
+                        //                 MediaQuery.sizeOf(context).height * .05,
+                        //             width:
+                        //                 MediaQuery.sizeOf(context).height * .05,
+                        //           )),
+                        //     ),
+                        //   ),
+                        // ),
+                        // const SizedBox(
+                        //   width: 15,
+                        // ),
+                      ],
+                    ),
                   ),
+                  const SizedBox(height: 20),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.center,
+                  //   children: [
+                  //     GestureDetector(
+                  //       onTap: () {
+                  //         launchURL(
+                  //             "https://drive.google.com/file/d/1wkl8679I28jJgeDN-ai3V92mPmC8prYP/view?usp=sharing");
+                  //       },
+                  //       child: Card(
+                  //         color: PortFolioColors.textColor,
+                  //         child: Padding(
+                  //           padding: const EdgeInsets.all(15.0),
+                  //           child: Text(
+                  //             'See My Resume',
+                  //             style: TextStyle(
+                  //                 color: PortFolioColors.colorOnPrimary),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
                 ],
               ),
             ),

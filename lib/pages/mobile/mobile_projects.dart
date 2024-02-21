@@ -17,37 +17,43 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
     List<ProjectDetails> projectDetailsList = [
       ProjectDetails(
         projectImageAddress: "assets/vyaya_logo.png",
-        projectName: 'Vyaya (Manages Your Expenses)',
+        projectName: 'Vyaya',
+        projectTagline: 'Manage your Expenses',
         projectDescription:
             'Effortlessly manage income & expenses. Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/speedometer_logo.png",
         projectName: 'Speed Detector',
+        projectTagline: "Track, Detect, Measure",
         projectDescription:
             'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/service_baba_logo.png",
         projectName: 'Service Baba',
+        projectTagline: "Book Service with Ease!",
         projectDescription:
             'Service Baba is a platform where service providers present their work & normal users can book their services by checking their work.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/cpis_logo.png",
         projectName: 'CPIS',
+        projectTagline: "Solving Citizens Problems",
         projectDescription:
             'CPIS (Citizen Problem Identification and System), with the help of this, citizens can register complaints to the corporation.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/mentormate_logo.jpg",
         projectName: 'MentorMate',
+        projectTagline: "Expert Learning, Simplified",
         projectDescription:
             'It is a mobile Application where student can directly connect to Expert & learn the topics in Details.',
       ),
       ProjectDetails(
         projectImageAddress: "assets/eatup_logo.png",
         projectName: 'EatUP',
+        projectTagline: "Plan your Meal with us",
         projectDescription:
             'Plan your Daily Meal with Our Suggestions according to food Material you have and Get Reminder Before Cooking Time.',
       ),
@@ -105,6 +111,7 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: GridView.builder(
                 shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     childAspectRatio: 1.60,
                     crossAxisCount: 1,
@@ -113,52 +120,14 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                 itemCount: projectDetailsList.length,
                 itemBuilder: (context, index) {
                   return CustomProjectTaskMobile(
-                      projectImagePath:
-                          projectDetailsList[index].projectImageAddress,
-                      projectName: projectDetailsList[index].projectName,
-                      projectDescription:
-                          projectDetailsList[index].projectDescription);
+                    projectImagePath:
+                        projectDetailsList[index].projectImageAddress,
+                    projectName: projectDetailsList[index].projectName,
+                    projectDescription:
+                        projectDetailsList[index].projectDescription,
+                    projectTagline: projectDetailsList[index].projectTagline,
+                  );
                 }),
-            // Column(
-            //   children: [
-            //     CustomProjectTask(
-            //       projectImagePath: "",
-            //       projectName: 'Vyaya (Manages Your Expenses)',
-            //       projectDescription:
-            //           'Effortlessly manage income & expenses.Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore.',
-            //     ),
-            //     CustomProjectTask(
-            //       projectImagePath: "",
-            //       projectName: 'Speed Detector',
-            //       projectDescription:
-            //           'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision.',
-            //     ),
-            //     CustomProjectTask(
-            //       projectImagePath: "",
-            //       projectName: 'Service Baba',
-            //       projectDescription:
-            //           'Service Baba is platform where service provider presents their work & normal user can book their services by checking their work.',
-            //     ),
-            //     CustomProjectTask(
-            //       projectImagePath: "",
-            //       projectName: 'CPIS',
-            //       projectDescription:
-            //           'CPIS (Citizen Problem Identification and System), with help of this citizen can register complain to corporation.',
-            //     ),
-            //     CustomProjectTask(
-            //       projectImagePath: "",
-            //       projectName: 'Event Planner',
-            //       projectDescription:
-            //           'It is a mobile Application. where user can simply plan any public or private Events',
-            //     ),
-            //     CustomProjectTask(
-            //       projectImagePath: "",
-            //       projectName: 'EatUP',
-            //       projectDescription:
-            //           'Plan your Daily Meal with Our Suggestions according to food Material you have.and Get Reminder Before Cooking Time.',
-            //     ),
-            //   ],
-            // ),
           ),
           const SizedBox(height: 20),
         ],

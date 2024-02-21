@@ -34,7 +34,7 @@ class _ContactMeMobileState extends State<ContactMeMobile> {
               direction: Direction.horizontal,
               offset: -0.5,
               child: SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.5,
+                  height: MediaQuery.of(context).size.height * 0.3,
                   child: Image.asset('assets/contact_person.png'))),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -59,31 +59,197 @@ class _ContactMeMobileState extends State<ContactMeMobile> {
                       textAlign: TextAlign.justify,
                     ),
                   ),
-                  const Row(
-                    children: [],
+                  const SizedBox(
+                    height: 20,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      GestureDetector(
+                      InkWell(
                         onTap: () {
                           launchURL(
-                              "https://drive.google.com/file/d/1wkl8679I28jJgeDN-ai3V92mPmC8prYP/view?usp=sharing");
+                              'https://www.linkedin.com/in/sahil-chudasama');
                         },
                         child: Card(
-                          color: PortFolioColors.textColor,
+                          color: PortFolioColors.colorWhite,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50)),
                           child: Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Text(
-                              'See My Resume',
-                              style: TextStyle(
-                                  color: PortFolioColors.colorOnPrimary),
-                            ),
+                            padding: const EdgeInsets.all(5.0),
+                            child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50),
+                                child: Image.asset(
+                                  'assets/linkedin.png',
+                                  height:
+                                      MediaQuery.sizeOf(context).height * .05,
+                                  width:
+                                      MediaQuery.sizeOf(context).height * .05,
+                                )),
                           ),
                         ),
                       ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      InkWell(
+                        onTap: () {
+                          launchURL("https://github.com/sahil3748");
+                        },
+                        child: Card(
+                          color: PortFolioColors.colorWhite,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50),
+                                child: Image.asset(
+                                  'assets/github.png',
+                                  height:
+                                      MediaQuery.sizeOf(context).height * .05,
+                                  width:
+                                      MediaQuery.sizeOf(context).height * .05,
+                                )),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      InkWell(
+                        onTap: () {
+                          launchURL(
+                              'mailto:sahilchudasama471@gmail.com?subject=${Uri.encodeFull('')}&body=${Uri.encodeFull('')}');
+                        },
+                        child: Card(
+                          color: PortFolioColors.colorWhite,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50),
+                                child: Image.asset(
+                                  'assets/gmail.png',
+                                  height:
+                                      MediaQuery.sizeOf(context).height * .05,
+                                  width:
+                                      MediaQuery.sizeOf(context).height * .05,
+                                )),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      // InkWell(
+
+                      //   onTap: () {
+                      //     launchURL('');
+                      //   },
+                      //   child: Card(
+                      //     color: PortFolioColors.colorWhite,
+                      //     shape: RoundedRectangleBorder(
+                      //         borderRadius: BorderRadius.circular(50)),
+                      //     child: Padding(
+                      //       padding: const EdgeInsets.all(5.0),
+                      //       child: ClipRRect(
+                      //           borderRadius: BorderRadius.circular(50),
+                      //           child: Image.asset(
+                      //             'assets/whatsapp.png',
+                      //             height:
+                      //                 MediaQuery.sizeOf(context).height * .05,
+                      //             width:
+                      //                 MediaQuery.sizeOf(context).height * .05,
+                      //           )),
+                      //     ),
+                      //   ),
+                      // ),
+                      // const SizedBox(
+                      //   width: 15,
+                      // ),
+                      // InkWell(
+                      //   onTap: () async {
+                      //     launchURL('');
+                      //   },
+                      //   child: Card(
+                      //     color: PortFolioColors.colorWhite,
+                      //     shape: RoundedRectangleBorder(
+                      //         borderRadius: BorderRadius.circular(50)),
+                      //     child: Padding(
+                      //       padding: const EdgeInsets.all(5.0),
+                      //       child: ClipRRect(
+                      //           borderRadius: BorderRadius.circular(50),
+                      //           child: Image.asset(
+                      //             'assets/instagram.png',
+                      //             height:
+                      //                 MediaQuery.sizeOf(context).height * .05,
+                      //             width:
+                      //                 MediaQuery.sizeOf(context).height * .05,
+                      //           )),
+                      //     ),
+                      //   ),
+                      // ),
+                      // const SizedBox(
+                      //   width: 15,
+                      // ),
+                      // InkWell(
+                      //   onTap: () {
+                      //     launchURL('');
+                      //   },
+                      //   child: Card(
+                      //     color: PortFolioColors.colorWhite,
+                      //     shape: RoundedRectangleBorder(
+                      //         borderRadius: BorderRadius.circular(50)),
+                      //     child: Padding(
+                      //       padding: const EdgeInsets.all(5.0),
+                      //       child: ClipRRect(
+                      //           borderRadius: BorderRadius.circular(50),
+                      //           child: Image.asset(
+                      //             'assets/facebook.png',
+                      //             height:
+                      //                 MediaQuery.sizeOf(context).height * .05,
+                      //             width:
+                      //                 MediaQuery.sizeOf(context).height * .05,
+                      //           )),
+                      //     ),
+                      //   ),
+                      // ),
+                      // const SizedBox(
+                      //   width: 15,
+                      // ),
                     ],
                   ),
+                  // const Row(
+                  //   children: [],
+                  // ),
+
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.center,
+                  //   children: [
+                  //     GestureDetector(
+                  //       onTap: () {
+                  //         launchURL(
+                  //             "https://drive.google.com/file/d/1wkl8679I28jJgeDN-ai3V92mPmC8prYP/view?usp=sharing");
+                  //       },
+                  //       child: Card(
+                  //         color: PortFolioColors.textColor,
+                  //         child: Padding(
+                  //           padding: const EdgeInsets.all(15.0),
+                  //           child: Text(
+                  //             'See My Resume',
+                  //             style: TextStyle(
+                  //                 color: PortFolioColors.colorOnPrimary),
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
+                  const SizedBox(
+                    height: 20,
+                  )
                 ],
               ),
             ),

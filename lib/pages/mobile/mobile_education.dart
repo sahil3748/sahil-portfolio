@@ -118,17 +118,17 @@ class _EducationMobileState extends State<EducationMobile> {
             direction: Direction.horizontal,
             offset: -0.5,
             child: const CustomEducationMobile(
-              imageAddress: "assets/gp_logo.png",
+              imageAddress: "assets/socet_logo.png",
               collegeName: "Silver Oak College of Engineering and Technology",
               collegeDegree: "B.Tech. in Computer Engineering",
-              collegePassingYear: "2017-2020",
-              collegeResult: "CGPA : ",
-              learning1: "Hands-on Innovation:",
+              collegePassingYear: "2020-2023",
+              collegeResult: "CGPA : 08.41",
+              learning1: "Mobile Application Development:",
               learning1InDetail:
-                  "Demonstrate practical expertise through participation in Hackathon and real-world projects, showcasing my IT skills, teamwork, and impactful outcomes.",
-              learning2: "Inquisitive Mindset:",
+                  "Highlight my experience in designing and developing mobile applications for various platforms,showcasing my skills in creating user-friendly interfaces, implementing functionalities,and optimizing performance to deliver engaging mobile experiences.",
+              learning2: "Public Speaking Proficiency:",
               learning2InDetail:
-                  "Highlight my curious and inquisitive approach to exploring new technologies and concepts,driving continuous growth and innovation in the field of Information Technology.",
+                  "Illustrate my ability to communicate effectively and confidently through public speaking,showcasing my skills in presenting technical information, discussing ideas, and engaging with diverse audiences, a valuable soft skill in the field of Computer Engineering.",
             ),
           ),
           const SizedBox(
@@ -140,17 +140,17 @@ class _EducationMobileState extends State<EducationMobile> {
             direction: Direction.horizontal,
             offset: 0.5,
             child: const CustomEducationMobile(
-              imageAddress: "assets/socet_logo.png",
+              imageAddress: "assets/gp_logo.png",
               collegeName: "Government Polytechnic Ahmedabad",
               collegeDegree: "Diploma in Information & Technology",
-              collegePassingYear: "2020-2023",
-              collegeResult: "CGPA : ",
-              learning1: "Mobile Application Development:",
+              collegePassingYear: "2017-2020",
+              collegeResult: "CGPA : 08.86",
+              learning1: "Hands-on Innovation:",
               learning1InDetail:
-                  "Highlight my experience in designing and developing mobile applications for various platforms,showcasing my skills in creating user-friendly interfaces, implementing functionalities,and optimizing performance to deliver engaging mobile experiences.",
-              learning2: "Public Speaking Proficiency:",
+                  "Demonstrate practical expertise through participation in Hackathon and real-world projects, showcasing my IT skills, teamwork, and impactful outcomes.",
+              learning2: "Inquisitive Mindset:",
               learning2InDetail:
-                  "Illustrate my ability to communicate effectively and confidently through public speaking,showcasing my skills in presenting technical information, discussing ideas, and engaging with diverse audiences, a valuable soft skill in the field of Computer Engineering.",
+                  "Highlight my curious and inquisitive approach to exploring new technologies and concepts,driving continuous growth and innovation in the field of Information Technology.",
             ),
           ),
           const SizedBox(
