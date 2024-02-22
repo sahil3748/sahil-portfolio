@@ -99,6 +99,7 @@ class PortFolioHomeDesktop extends StatelessWidget {
                             fontSize: MediaQuery.sizeOf(context).height * 0.03,
                             color: PortFolioColors.colorOnSecondary,
                             fontWeight: FontWeight.w400),
+
                         textAlign: TextAlign.justify,
                       ),
                     ),

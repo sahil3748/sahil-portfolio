@@ -63,11 +63,13 @@ class _MobileHomePageContentState extends State<MobileHomePageContent> {
                       style: TextStyle(
                           color: PortFolioColors.colorOnPrimary, fontSize: 20),
                     ),
-                    // Text(
-                    //   'Flutter Developer',
-                    //   style: TextStyle(
-                    //       color: PortFolioColors.colorOnPrimary, fontSize: 18),
-                    // ),
+                    Text(
+                      'Application Developer',
+                      style: TextStyle(
+                          color:
+                              PortFolioColors.colorOnPrimary.withOpacity(.85),
+                          fontSize: 14),
+                    ),
                   ],
                 ),
               ),

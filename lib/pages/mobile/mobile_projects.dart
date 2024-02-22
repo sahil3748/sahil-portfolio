@@ -20,43 +20,42 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
         projectName: 'Vyaya',
         projectTagline: 'Manage your Expenses',
         projectDescription:
-            'Effortlessly manage income & expenses. Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore.',
+            'Effortlessly manage income & expenses. Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore. Try it now!',
       ),
       ProjectDetails(
         projectImageAddress: "assets/speedometer_logo.png",
         projectName: 'Speed Detector',
         projectTagline: "Track, Detect, Measure",
         projectDescription:
-            'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision.',
+            'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision. Stay updated with the latest version!',
       ),
       ProjectDetails(
         projectImageAddress: "assets/service_baba_logo.png",
         projectName: 'Service Baba',
         projectTagline: "Book Service with Ease!",
         projectDescription:
-            'Service Baba is a platform where service providers present their work & normal users can book their services by checking their work.',
+            'Service Baba is a platform where service providers present their work & normal users can book their services by checking their work. Book your first service now!',
       ),
       ProjectDetails(
         projectImageAddress: "assets/cpis_logo.png",
         projectName: 'CPIS',
         projectTagline: "Solving Citizens Problems",
         projectDescription:
-            'CPIS (Citizen Problem Identification and System), with the help of this, citizens can register complaints to the corporation.',
+            'CPIS (Citizen Problem Identification and System), with the help of this, citizens can register complaints to the corporation. Let your voice be heard!',
       ),
       ProjectDetails(
         projectImageAddress: "assets/mentormate_logo.jpg",
         projectName: 'MentorMate',
         projectTagline: "Expert Learning, Simplified",
         projectDescription:
-            'It is a mobile Application where student can directly connect to Expert & learn the topics in Details.',
+            'It is a mobile Application where student can directly connect to Expert & learn the topics in Details. Start your learning journey today! Unlock your potential with personalized guidance from industry experts!',
       ),
       ProjectDetails(
-        projectImageAddress: "assets/eatup_logo.png",
-        projectName: 'EatUP',
-        projectTagline: "Plan your Meal with us",
-        projectDescription:
-            'Plan your Daily Meal with Our Suggestions according to food Material you have and Get Reminder Before Cooking Time.',
-      ),
+          projectImageAddress: "assets/eatup_logo.png",
+          projectName: 'EatUP',
+          projectTagline: "Plan your Meal with us",
+          projectDescription:
+              'Plan your Daily Meal with Our Suggestions according to food Material you have and Get Reminder Before Cooking Time. Never miss a meal again! Eat healthier and tastier meals effortlessly with EatUP!'),
     ];
 
     return Container(
@@ -113,7 +112,7 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    childAspectRatio: 1.60,
+                    childAspectRatio: 1.55,
                     crossAxisCount: 1,
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10),

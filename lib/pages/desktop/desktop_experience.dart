@@ -30,8 +30,6 @@ class ExperienceDesktop extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.15),
                         Text(
                           titleText,
                           style: TextStyle(
@@ -56,13 +54,6 @@ class ExperienceDesktop extends StatelessWidget {
                             textAlign: TextAlign.justify,
                           ),
                         ),
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.05),
-                        const Row(
-                          children: [],
-                        ),
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.05),
                       ],
                     ),
                   ),

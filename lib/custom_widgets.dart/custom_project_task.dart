@@ -121,8 +121,6 @@ class CustomProjectTask extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: 25,
-      // padding: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(18),
         color: PortFolioColors.colorWhite,
@@ -133,7 +131,6 @@ class CustomProjectTask extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-              // borderRadius: BorderRadius.circular(18),
               borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(18), topRight: Radius.circular(18)),
               color: PortFolioColors.textColor,
@@ -172,14 +169,14 @@ class CustomProjectTask extends StatelessWidget {
                         style: TextStyle(
                             color: PortFolioColors.colorOnPrimary,
                             fontWeight: FontWeight.w600,
-                            fontSize: 18),
+                            fontSize: 22),
                       ),
                       Text(
                         projectTagline,
                         style: TextStyle(
                             color: PortFolioColors.colorOnPrimary,
                             fontWeight: FontWeight.w400,
-                            fontSize: 12),
+                            fontSize: 18),
                       ),
                     ],
                   ),

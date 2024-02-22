@@ -44,8 +44,6 @@ class _EducationDesktopState extends State<EducationDesktop> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.15),
                         Text(
                           widget.titleText,
                           style: TextStyle(
@@ -97,13 +95,6 @@ class _EducationDesktopState extends State<EducationDesktop> {
                             textAlign: TextAlign.justify,
                           ),
                         ),
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.05),
-                        const Row(
-                          children: [],
-                        ),
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.05),
                       ],
                     ),
                   ),

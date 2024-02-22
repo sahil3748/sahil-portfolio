@@ -17,43 +17,42 @@ class ProjectDesktop extends StatelessWidget {
         projectName: 'Vyaya',
         projectTagline: 'Manage your Expenses',
         projectDescription:
-            'Effortlessly manage income & expenses. Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore.',
+            'Effortlessly manage income & expenses. Weekly/monthly/yearly analysis. Set category-wise limits: Needs, Wants, Savings. Available on PlayStore. Try it now!',
       ),
       ProjectDetails(
         projectImageAddress: "assets/speedometer_logo.png",
         projectName: 'Speed Detector',
         projectTagline: "Track, Detect, Measure",
         projectDescription:
-            'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision.',
+            'Accomplished real-time Object Speed Detector app for tracking and analyzing object motion with precision. Stay updated with the latest version!',
       ),
       ProjectDetails(
         projectImageAddress: "assets/service_baba_logo.png",
         projectName: 'Service Baba',
-        projectTagline: "Service Solution: Book with Ease!",
+        projectTagline: "Book Service with Ease!",
         projectDescription:
-            'Service Baba is a platform where service providers present their work & normal users can book their services by checking their work.',
+            'Service Baba is a platform where service providers present their work & normal users can book their services by checking their work. Book your first service now!',
       ),
       ProjectDetails(
         projectImageAddress: "assets/cpis_logo.png",
         projectName: 'CPIS',
-        projectTagline: "Empowering Citizens, Solving Problems",
+        projectTagline: "Solving Citizens Problems",
         projectDescription:
-            'CPIS (Citizen Problem Identification and System), with the help of this, citizens can register complaints to the corporation.',
+            'CPIS (Citizen Problem Identification and System), with the help of this, citizens can register complaints to the corporation. Let your voice be heard!',
       ),
       ProjectDetails(
         projectImageAddress: "assets/mentormate_logo.jpg",
         projectName: 'MentorMate',
         projectTagline: "Expert Learning, Simplified",
         projectDescription:
-            'It is a mobile Application where student can directly connect to Expert & learn the topics in Details.',
+            'It is a mobile Application where student can directly connect to Expert & learn the topics in Details. Start your learning journey today! Unlock your potential with personalized guidance from industry experts!',
       ),
       ProjectDetails(
-        projectImageAddress: "assets/eatup_logo.png",
-        projectName: 'EatUP',
-        projectTagline: "Effortless Planning, Timely Reminders",
-        projectDescription:
-            'Plan your Daily Meal with Our Suggestions according to food Material you have and Get Reminder Before Cooking Time.',
-      ),
+          projectImageAddress: "assets/eatup_logo.png",
+          projectName: 'EatUP',
+          projectTagline: "Plan your Meal with us",
+          projectDescription:
+              'Plan your Daily Meal with Our Suggestions according to food Material you have and Get Reminder Before Cooking Time. Never miss a meal again! Eat healthier and tastier meals effortlessly with EatUP!'),
     ];
 
     return Column(
@@ -84,10 +83,8 @@ class ProjectDesktop extends StatelessWidget {
                     direction: Direction.horizontal,
                     offset: 0.5,
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.15),
                         Text(
                           titleText,
                           style: TextStyle(
@@ -96,12 +93,12 @@ class ProjectDesktop extends StatelessWidget {
                               fontSize:
                                   MediaQuery.sizeOf(context).height * 0.06),
                         ),
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.05),
+                        const SizedBox(height: 10),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 25.0),
                           child: Text(
                             "My passion lies in creating innovative and impactful projects that leverage the latest technology tools. One of my proudest achievements is a live application available on the Play Store, showcasing my dedication to delivering seamless user experiences. With expertise in Flutter, I craft engaging mobile apps that leave a lasting impression. Welcome to my portfolio, and let's explore the possibilities of working together!", // Add your desired content here
+                            overflow: TextOverflow.clip,
                             style: TextStyle(
                                 height: 1.7,
                                 wordSpacing: 0.5,
@@ -112,13 +109,6 @@ class ProjectDesktop extends StatelessWidget {
                             textAlign: TextAlign.justify,
                           ),
                         ),
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.05),
-                        const Row(
-                          children: [],
-                        ),
-                        SizedBox(
-                            height: MediaQuery.sizeOf(context).height * 0.05),
                       ],
                     ),
                   ),
@@ -139,17 +129,13 @@ class ProjectDesktop extends StatelessWidget {
                   mainAxisSpacing: 10),
               itemCount: projectDetailsList.length,
               itemBuilder: (context, index) {
-                return SizedBox(
-                  height: 20,
-                  // child: Text('data'),
-                  child: CustomProjectTask(
-                    projectImagePath:
-                        projectDetailsList[index].projectImageAddress,
-                    projectName: projectDetailsList[index].projectName,
-                    projectDescription:
-                        projectDetailsList[index].projectDescription,
-                    projectTagline: projectDetailsList[index].projectTagline,
-                  ),
+                return CustomProjectTask(
+                  projectImagePath:
+                      projectDetailsList[index].projectImageAddress,
+                  projectName: projectDetailsList[index].projectName,
+                  projectDescription:
+                      projectDetailsList[index].projectDescription,
+                  projectTagline: projectDetailsList[index].projectTagline,
                 );
               }),
         ),
